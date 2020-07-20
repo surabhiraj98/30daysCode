@@ -8,14 +8,15 @@ import java.util.regex.*;
 
 public class Solution {
  public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        scan.close();
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        s.close();
 
         int sum = 0, max = 0;
         while (n > 0) {
             if (n % 2 == 1) {
                 sum++;
+             
                 if (sum > max) {
                     max = sum;
                 }
